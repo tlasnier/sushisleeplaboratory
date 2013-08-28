@@ -12,6 +12,7 @@ SushiSleepLaboratory/src/main/res/drawable-*/
 *.xcf
 *.gradle
 *.iml
+*.zip
 
 #specific files
 local.properties
