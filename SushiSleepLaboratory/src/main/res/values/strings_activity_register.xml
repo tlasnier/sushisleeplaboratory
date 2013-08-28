@@ -1,0 +1,23 @@
+<resources>
+    <!-- Strings related to login -->
+    <string name="prompt_lastname">Lastname</string>
+    <string name="prompt_firstname">Firstname</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_gender">Gender</string>
+    <string name="prompt_birth">Date of Birth</string>
+    <string name="default_birth_date">\?\?\?</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_second_password">Enter the same password</string>
+    <string name="error_password_confirmation">Passwords must be the same</string>
+    <string name="error_gender_field_required">Gender is required, please choose.</string>
+    <string name="error_user_creation">Error : User creation is not implemented yet.</string>
+
+    <string name="action_submit">Submit</string>
+
+    <string name="register_progress_submitting">Submitting &#8230;</string>
+
+    <string name="male">M</string>
+    <string name="female">F</string>
+
+    <string name="network_unavailable">Network is not available.</string>
+</resources>

@@ -1,0 +1,18 @@
+#directories
+.git/
+gradle/
+.gradle/
+.idea/
+SushiSleepLaboratory/build/
+SushiSleepLaboratory/libs/
+SushiSleepLaboratory/src/main/res/drawable-*/
+
+#files patterns
+*.png
+*.xcf
+*.gradle
+*.iml
+
+#specific files
+local.properties
+gradlew*

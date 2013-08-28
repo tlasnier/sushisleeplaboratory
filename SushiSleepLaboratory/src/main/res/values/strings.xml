@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sushi Sleep Laboratory</string>
+    <string name="sushisleep_url">http://sushisleepserver.herokuapp.com</string>
+</resources>

@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rootLy"
+                android:background="@drawable/fond"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <!-- Login progress -->
+
+    <LinearLayout android:id="@+id/register_status"
+                  android:visibility="gone"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_gravity="center"
+                  android:gravity="center_horizontal|center_vertical"
+                  android:orientation="vertical">
+
+        <ProgressBar style="?android:attr/progressBarStyleLarge"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="8dp"/>
+        <TextView
+                android:id="@+id/reg_status_message"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/register_progress_submitting"
+                />
+    </LinearLayout>
+
+    <!-- Login form -->
+    <ScrollView
+            android:id="@+id/register_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout style="@style/LoginFormContainer"
+                      android:orientation="vertical"
+                      android:layout_gravity="center"
+                      android:layout_height="match_parent">
+
+            <EditText style="@style/MyLoginField"
+                      android:id="@+id/reg_lastname"
+                      android:inputType="text"
+                      android:hint="@string/prompt_lastname"/>
+
+            <EditText style="@style/MyLoginField"
+                      android:id="@+id/reg_firstname"
+                      android:inputType="text"
+                      android:hint="@string/prompt_firstname"/>
+
+            <EditText style="@style/MyLoginField"
+                      android:id="@+id/reg_email"
+                      android:inputType="textEmailAddress"
+                      android:hint="@string/prompt_email"/>
+
+            <EditText style="@style/MyLoginField"
+                      android:id="@+id/reg_password"
+                      android:hint="@string/prompt_password"
+                      android:inputType="textPassword"/>
+
+            <EditText style="@style/MyLoginField"
+                      android:id="@+id/reg_password_confirm"
+                      android:hint="@string/prompt_second_password"
+                      android:inputType="textPassword"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="24dp"
+                        android:paddingBottom="24dp"
+                        android:paddingRight="16dp"
+                        android:gravity="center_horizontal"
+                        >
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="match_parent"
+                              android:text="@string/prompt_gender"
+                              android:textSize="24dp"
+                              android:paddingBottom="10dp"/>
+
+                    <RadioGroup
+                            android:id="@+id/gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            >
+
+                        <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/male"
+                                android:gravity="center"
+                                android:id="@+id/male_radio"/>
+
+                        <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/female"
+                                android:id="@+id/female_radio"
+                                android:gravity="center"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="24dp"
+                        android:paddingBottom="24dp"
+                        android:gravity="center_horizontal">
+
+                <TextView android:layout_width="wrap_content"
+                              android:layout_height="match_parent"
+                              android:text="@string/prompt_birth"
+                              android:textSize="24dp"
+                              android:paddingBottom="10dp"/>
+
+                    <Button android:id="@+id/birthDate"
+                              android:text="@string/default_birth_date"
+                              android:textSize="18dp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="match_parent"
+                              android:onClick="openDatePickerDialog"
+                              android:padding="24dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <Button android:id="@+id/submit_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/action_submit"
+                        android:paddingLeft="32dp"
+                        android:paddingRight="32dp"
+                        android:layout_gravity="right" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
