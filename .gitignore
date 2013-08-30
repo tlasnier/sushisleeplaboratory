@@ -4,11 +4,11 @@ gradle/
 .gradle/
 .idea/
 SushiSleepLaboratory/build/
-SushiSleepLaboratory/libs/
-SushiSleepLaboratory/src/main/res/drawable-*/
+#SushiSleepLaboratory/libs/
+#SushiSleepLaboratory/src/main/res/drawable-*/
 
 #files patterns
-*.png
+#*.png
 *.xcf
 *.gradle
 *.iml
